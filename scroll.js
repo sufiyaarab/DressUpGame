@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
         console.error("Video element not found.");
     }
 });
+//background music function
 document.addEventListener('DOMContentLoaded', function() {
     var audio = document.getElementById('Background-Music');
     audio.play();
