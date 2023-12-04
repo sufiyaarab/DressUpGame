@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Welcome to LookBook!</title>
+    <link rel="stylesheet" href="welcome.css" />
+  </head>
+  <body>
+    <!-- a div for the title and the image -->
+    <div id="title-image">
+      <h2>LookBook!</h2>
+      <img id="tAvatar" src="default_avatar2.png" alt="sample-avatar" />
+    </div>
+
+    <!--  -->
+    <div id="mainDiv">
+      <audio id="Background-Music" loop hidden>
+        <source src="bg.mp3" type="audio/mpeg" />
+        Your browser does not support the audio element.
+      </audio>
+
+      <!--  -->
+      <div class="container">
+        <video width="400" height="300" autoplay loop muted id="vid">
+          <source src="vid.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <!--  -->
+      <div id="playButn">
+        <img src="subject.png" id="image" alt="img" />
+        <a href="user_form.html">
+          <button class="btn">Play Now</button>
+        </a>
+      </div>
+    </div>
+
+    <!-- Linking the JavaScript files -->
+    <script src="scroll.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Gluten&family=Preahvihear&display=swap');
+
+* {
+    font-family: Preahvihear;
+}
+
+body {
+    min-height: 130vh;
+    background: #FFF9EC;
+    padding: 10px;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.5s, color 0.5s;  /*transition for light/dark mode switching*/
+    font-family: Preahvihear;
+}
+
+#tAvatar {
+    padding: 0;
+    margin: 0;
+    max-width: 50px;
+}
+  
+h2 {
+    padding: 0 25px;
+    margin: 0;
+    text-align: center;
+    font-family: "Agbalumo", sans-serif;
+    font-weight: 900;
+    font-size: 3rem;
+    color: #5D2A42;
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+}
+
+h3 {
+    text-align: center;
+}
+  
+#title-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 20px 0;
+    padding-top: 30px;
+}
+
+body.dark-mode {
+    background-color: #202020; /* Dark pink background */
+    color: #fff;
+}
+
+#game-container {
+    max-width: vw;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-image 0.5s;
+    
+
+}
+
+#background-container {
+    margin: 20px 0;
+    padding: 30px;
+    min-width: 750px;
+    min-height: 400px;
+    
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-image 0.5s;
+    background-color: antiquewhite;
+
+    border-radius: 50px;
+    border-style: solid;
+    border-width: 4px;
+    border-color: #FCD581;
+}
+
+#avatar-preview {
+    max-width: 600px;
+    max-height: 600px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-image 0.5s;
+    padding-top: 15px;
+    border:solid 2px;
+}
+
+#avatar-img {
+    /* Ensure the image doesn't exceed the container */
+    width: 60%;
+    height: 60%;
+     /* Maintain the image's aspect ratio */
+    object-fit: contain;
+}
+
+#avatar-selection {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Preahvihear;
+}
+
+#avatar-selection label {
+    margin-bottom: 5px;
+    font-family: Preahvihear;
+}
+
+#avatar {
+    margin: 0;
+    padding: 0 20px;
+    max-height: 300px;
+    max-width: 300px;
+    font-family: Preahvihear;
+    cursor:pointer;
+}
+
+#a {
+    font-family: Preahvihear;
+}
+
+#controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    padding: 0;
+}
+
+button {
+    min-height: 20px;
+    min-width: 20%;
+    padding: 5px 20px;
+    margin: 0 10px;
+
+    background-color: #CC444B;
+    color: white;
+
+    border-style: none;
+    border-color: black;
+
+
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 70px;
+    transition: transform 0.5s, background-color 0.5s;
+}
+
+#removeButtn {
+    background-color: #db7c81;
+    color: white;
+    transition: transform 0.5s;
+}
+
+button:hover {
+    transform: scale(1.1);
+    background-color: #E39695;
+}
+
+#dark-mode-toggle {
+    cursor: pointer;
+    margin-left: 100px;
+    margin-left: 7px;
+}
+
+#darkMode {
+    display: block;
+    cursor: pointer;
+}
+
+#clothes-container1 {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 25px;
+    left: 70px;
+    top: 230px;
+    cursor:grab;
+
+    background-color: antiquewhite;
+    border-radius: 50px;
+    border-style: solid;
+    border-width: 4px;
+    border-color: #FCD581;
+}
+
+#glasses,
+#bowtie,
+#other{
+    height: 70px;
+    width: 70px;
+}
+
+/*---------------------------------------------------------------*/

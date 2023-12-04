@@ -1,0 +1,67 @@
+body {
+  background: #FFF9EC;
+  padding: 10px;
+  overflow: hidden; /* Hide scrollbars */
+}
+
+.box {
+  width: 100%;
+  min-height: 100vh;
+  background: #Fdebeb;
+
+  padding: 5px;
+}
+
+
+.container {
+  width:  350px;
+  max-width: 900px;
+  height: 200px;
+  background: rgba(227, 212, 173, 0.3);
+  /* 0.7 for transparency to bring personalization and modern feel */
+margin-left: 450px;
+  padding: 20px 5px 70px;
+  border-radius: 50px;
+}
+
+#vid{
+ border-radius: 20;
+  position: absolute;
+object-position: 40px
+2px ;
+}
+
+#subject{
+  top:420px;
+  left: 560px;
+  z-index: 2;
+  height: 100px;
+}
+
+
+
+.btn {
+    background-color: pink; 
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    background-color: #FF1694;
+}
+
+
+.getOrganized h2 {
+  color: #1C4620;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#Background-Music{
+    display: none;
+    visibility: hidden;
+}
+
+
+
+
