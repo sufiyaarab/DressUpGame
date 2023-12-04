@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Gluten:wght@800&family=Preahvihear&display=swap');
+
+body {
+  background: #FFF9EC;
+  padding: 10px;
+  overflow: hidden; /* Hide scrollbars */
+}
+
+
+#tAvatar {
+  padding: 0;
+  margin: 0;
+  max-width: 50px;
+}
+
+h2 {
+  padding: 0 25px;
+  margin: 0;
+  text-align: center;
+  font-family: "Agbalumo", sans-serif;
+  font-weight: 900;
+  font-size: 3rem;
+  color: #5D2A42;
+}
+
+#title-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 20px 0;
+}
+
+#mainDiv {
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.container {
+  min-width:  500px;
+  max-width: 600px;
+  min-height: 300px;
+
+  border-radius: 20px;
+  background-color: antiquewhite;
+  padding: 0;
+  margin: 0;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#vid{
+  border-radius: 20px;
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+
+#playButn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+#image{
+  margin-top: 360px;
+  margin-left: -500px;
+  margin-right: 0;
+  z-index: 2;
+  height: 100px;
+  position: absolute;
+}
+
+.btn {
+  min-height: 70px;
+  min-width: 300px;
+  padding: 0;
+
+  margin-top: 210px;
+  margin-left: -400px;
+  margin-right: 0;
+  position: absolute;
+
+
+  background-color: #FB6376;
+  color: white;
+  font-weight: bold;
+  font-family: 'Gluten';
+  font-weight: 900;
+  font-size: 1.6rem;
+
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  background-color: #A94C77;
+}
+
+#Background-Music{
+  display: none;
+  visibility: hidden;
+}
+
+
+/*---------------------*/
+
+#ttAvatar {
+  padding: 0;
+  margin: 0;
+  max-width: 50px;
+}
+
+/*---------------------------------------------------------------*/
+
+.inputs {
+  display: flex;
+  align-items: left;
+  justify-content: space-between;
+  background: #edeef0;
+  border-radius: 30px;
+  padding-left: 20px;
+  margin-bottom: 25px;
+  /* How input will look*/
+
+}
+
+input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 5px;
+}
+
+button {
+  border: none;
+  outline: none;
+  padding: 12px 12px;
+  background: #154734;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 70px;
+  /* Button styling to go with the theme */
+
+}
+
+
+#user-info label {
+  font-weight: bold;
+  font-size: 20px;
+  display: block; /* This makes the label take up the full width */
+  margin-left: 30px;
+  margin-top: 20px;
+}
+
+#user-info input[type="text"] {
+  background-color: white;
+  border-radius: 50px;
+  display: block; /* Ensures the input takes up the full width of its parent */
+  margin-left: 30px;
+  margin-top: 10px; /* Space between label and input */
+}
+
+#user-info input[type="color"] {
+  display: block;
+  margin-left: 30px;
+  margin-top: 50px; /* Increased space between 'Your Name' and 'Name Color' sections */
+}

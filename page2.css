@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Gluten&family=Preahvihear&display=swap');
+* {
+    font-family: Preahvihear;
+}
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: background-color 0.5s, color 0.5s;
+    background: #FFF9EC;
+    padding: 10px;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.5s, color 0.5s;  /*transition for light/dark mode switching*/
+    font-family: Preahvihear;
+}
+
+h2 {
+  padding: 0 25px;
+  margin: 0;
+  text-align: center;
+  font-family: "Agbalumo", sans-serif;
+  font-weight: 900;
+  font-size: 3rem;
+  color: #5D2A42;
+  text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+}
+
+p {
+    font-family: Preahvihear;
+    margin: 0;
+    padding: 0;
+}
+
+#title-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 20px 0;
+  padding-top: 30px;
+}
+
+
+#ttAvatar {
+  padding: 0;
+  margin: 0;
+  max-width: 50px;
+}
+
+
+
+#user-info label {
+  font-weight: bold;
+  font-size: 20px;
+  display: block; /* This makes the label take up the full width */
+  margin-left: 30px;
+  margin-top: 20px;
+}
+
+#img{
+    margin-top: 10px;
+    margin-left: 570px;
+    margin-right: 0;
+    z-index: 2;
+    height: 100px;
+    position: absolute;
+  }
+
+#user-info input[type="text"] {
+  background-color: white;
+  border-radius: 50px;
+  display: block; /* Ensures the input takes up the full width of its parent */
+  margin-left: 30px;
+  margin-top: 10px; /* Space between label and input */
+}
+
+#user-info input[type="color"] {
+  display: block;
+  margin-left: 30px;
+  margin-top: 50px; /* Increased space between 'Your Name' and 'Name Color' sections */
+}
+
+.box {
+  width: 100%;
+  min-height: 100vh;
+  background: #Fdebeb;
+
+  padding: 5px;
+}
+
+.container {
+    min-width:  500px;
+    max-width: 600px;
+    min-height: 300px;
+  
+    border-radius: 20px;
+    background-color: antiquewhite;
+    padding: 0;
+    margin: 0;
+    margin-left: 350px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+#subject{
+  top:420px;
+  left: 560px;
+  z-index: 2;
+  height: 100px;
+}
+
+
+
+button {
+  border: none;
+  outline: none;
+  padding: 12px 12px;
+  background: #154734;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 70px;
+  transition: transform 0.5s, background-color 0.5s;
+  min-height: 20px;
+  min-width: 20%;
+  margin: 0 10px;
+  background-color: #CC444B;
+  color: white;
+  border-style: none;
+  border-color: black;
+  font-size: 1rem;
+}
+
+
+button:hover {
+  transform: scale(1.1);
+  background-color: #E39695;
+}
+
+
+#Background-Music{
+    display: none;
+    visibility: hidden;
+}
+
+
+.inputs {
+  display: flex;
+  align-items: left;
+  justify-content: space-between;
+  background: #edeef0;
+  border-radius: 30px;
+  padding-left: 20px;
+  margin-bottom: 25px;
+  /* How input will look*/
+
+}
+
+input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 5px;
+}
+

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LookBook</title>
+    <link rel="stylesheet" href="stylesheet.css"/>
+    <script type="text/javascript" src="myversion.js"></script>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js"></script>
+    <!-- Adding font styles from welcome_page.html --> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+</head> 
+<body>
+    <div id="title-image">
+        <h2>LookBook!</h2>
+        <img id="tAvatar" src="default_avatar2.png" alt="sample-avatar" />
+    </div>
+    <div class="box">
+        <div class="LookBook">
+            <!-- Displaying user's input from localStorage at the top -->
+            <audio id="Background-Music" loop>
+                <source src="bg.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>                                                                                                                                            
+            <!--this is the main game container, contains the background, different avatars and allows for accessories in the box.-->
+            <div id="game-container">
+                <div id="clothes-container1" class="clothes-container">
+                    <img id="glasses" src="glasses1.png" alt="Glasses 1" class="draggable"draggable="true" ondragstart="drag(event)">
+                    <img id="glasses"src="glasses2.png" alt="Glasses 2" class="draggable"draggable="true" ondragstart="drag(event)">
+                    <img id="bowtie"src="bowtie.png" alt="bowtie1" class="draggable"draggable="true" ondragstart="drag(event)">
+                    <img id="bowtie"src="bowtie2.png" alt="bowtie2" class="draggable"draggable="true" ondragstart="drag(event)">
+                    <img id="other"src="cartoonhat.png" alt="hat" class="draggable"draggable="true" ondragstart="drag(event)">
+                    <img id="other"src="star.png" alt="star" class="draggable"draggable="true" ondragstart="drag(event)">
+                </div>
+            </h3>
+                <h1><h3>
+                    Welcome, <span id="user-name"></span>! <br> Select Your Avatar and Drag Accesories in Left Container to the Box</h1>
+                <form id="avatar-selection">
+                    <label for="avatar">Choose your avatar:</label>
+                    <select id="avatar" onchange="updateAvatar()">
+                        <option value="default_avatar.png">Avatar 1</option>
+                        <option value="default_avatar2.png">Avatar 2</option>
+                        <option value="default_avatar4.png">Avatar 3</option>
+                    </select>
+                </form>
+                <div id="avatar-composition-container">
+                    <div id="background-container">
+                        <!-- ... Other elements inside the background container ... -->
+                        <div id="avatar-preview" ondrop="drop(event)" ondragover="allowDrop(event)">
+                            <img id="avatar-img" src="7eef112e-7e91-4870-99b0-8659b479c736.png" alt="Selected Avatar">
+                        </div>
+                    </div>
+                </div>
+                <button id="remove-item-button" onclick="removeAcc()">Remove Item</button>
+                <div id="controls">
+                    <button onclick="changeBackground()">Change Background</button>
+                    <button onclick="downloadAvatar()">Download Avatar</button>
+                    <button onclick="downloadComposition()">Download Composition</button>
+                </div>
+                <div class="darkMode">
+                <label for="dark-mode-toggle">Dark Mode</label>
+                    <input type="checkbox" id="dark-mode-toggle" onchange="toggleDarkMode()">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Now linking the JavaScript files -->
+    <script src="script.js"></script>
+    <script src="scroll.js"></script>
+
+    <!-- Retrieve user's name from localStorage and display it -->
+  
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const userName = localStorage.getItem("userName");
+            const nameColor = localStorage.getItem("nameColor");
+            const userNameElement = document.getElementById("user-name");
+    
+            if (userName && nameColor && userNameElement) {
+                userNameElement.innerText = userName;
+                userNameElement.style.color = nameColor;
+            }
+        });
+    </script>
+    
+</body>
+</html>
+
