@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LookBook</title>
+    <title>MAIN GAME</title>
     <link rel="stylesheet" href="stylesheet.css"/>
     <script type="text/javascript" src="myversion.js"></script>
+    <!--for use in using html2library in javascript, for downloading images.-->
     <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js"></script>
-    <!-- Adding font styles from welcome_page.html --> 
+    <!-- Adding font styles from welcome_page.html -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
 </head> 
 <body>
@@ -18,7 +19,7 @@
     </div>
     <div class="box">
         <div class="LookBook">
-            <!-- Displaying user's input from localStorage at the top -->
+            <!--this plays the background music, except most browsers dont allow, only mozilla.-->
             <audio id="Background-Music" loop>
                 <source src="bg.mp3" type="audio/mpeg">
                 Your browser does not support the audio element.
@@ -34,8 +35,8 @@
                     <img id="other"src="star.png" alt="star" class="draggable"draggable="true" ondragstart="drag(event)">
                 </div>
             </h3>
-                <h1><h3>
-                    Welcome, <span id="user-name"></span>! <br> Select Your Avatar and Drag Accesories in Left Container to the Box</h1>
+                <h1><h3>             <!-- Displaying user's input from localStorage at the top, and instructions-->
+                    Welcome, <span id="user-name"></span>! Select Your Avatar and Drag Accesories in Left ontainer to the Box</h1>
                 <form id="avatar-selection">
                     <label for="avatar">Choose your avatar:</label>
                     <select id="avatar" onchange="updateAvatar()">
@@ -48,18 +49,16 @@
                     <div id="background-container">
                         <!-- ... Other elements inside the background container ... -->
                         <div id="avatar-preview" ondrop="drop(event)" ondragover="allowDrop(event)">
-                            <img id="avatar-img" src="7eef112e-7e91-4870-99b0-8659b479c736.png" alt="Selected Avatar">
+                            <img id="avatar-img" src="silh.png" alt="Selected Avatar">
                         </div>
                     </div>
                 </div>
-                <button id="remove-item-button" onclick="removeAcc()">Remove Item</button>
-                <div id="controls">
+                <div id="controls"> <!--controls container holds all the buttons and functions related to the buttons-->
                     <button onclick="changeBackground()">Change Background</button>
                     <button onclick="downloadAvatar()">Download Avatar</button>
                     <button onclick="downloadComposition()">Download Composition</button>
-                </div>
-                <div class="darkMode">
-                <label for="dark-mode-toggle">Dark Mode</label>
+                    <button id="remove-item-button" onclick="removeAcc()">Remove Item</button>
+                    <label for="dark-mode-toggle">Dark Mode</label>
                     <input type="checkbox" id="dark-mode-toggle" onchange="toggleDarkMode()">
                 </div>
             </div>
