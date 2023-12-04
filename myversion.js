@@ -12,14 +12,14 @@ document.addEventListener('DOMContentLoaded', function() {
     audio.play();
 });
 
-function updateBackgroundPreview() {
+function updateBackgroundPreview() { //loop through the backgrounds array when the button is clicked. 
     const backgroundPreview = document.getElementById('background-preview');
     if (backgroundPreview) {
         backgroundPreview.style.backgroundImage = `url('${backgrounds[currentBackgroundIndex]}')`;
     }
 }
 
-function changeBackground() {
+function changeBackground() { //loop through the backgrounds array when the button is clicked. 
     currentBackgroundIndex = (currentBackgroundIndex + 1) % backgrounds.length;
     const backgroundContainer = document.getElementById('background-container');
     if (backgroundContainer) {
@@ -28,7 +28,7 @@ function changeBackground() {
     updateBackgroundPreview();
 }
 
-function downloadAvatar() {
+function downloadAvatar() { //downloads the avatar
     const avatar = document.getElementById('avatar-img');
     const link = document.createElement('a');
     if (avatar && avatar.src) {
@@ -38,7 +38,7 @@ function downloadAvatar() {
     }
 }
 
-function downloadComposition() {
+function downloadComposition() { //downloads the composition onto the clients computer.
     const avatarCompositionContainer = document.getElementById('avatar-composition-container');
 
     html2canvas(avatarCompositionContainer).then(function (canvas) {
@@ -53,7 +53,7 @@ function downloadComposition() {
 }
 
 
-function toggleDarkMode() {
+function toggleDarkMode() { //toggles dark mode style in stylesheet.
     const body = document.body;
     body.classList.toggle('dark-mode');
 }
@@ -146,33 +146,5 @@ function removeAcc() {
     
     if (existingAcc) {
         avatarPreview.removeChild(existingAcc);
-    }
-}
-function addAccessory() {
-    const accessoryTable = document.getElementById('accessory-table');
-    const newRow = accessoryTable.insertRow();
-
-    // Add accessories to the new row
-    const accessories = ["glasses1.png", "glasses2.png", "bowtie1.png", "bowtie2.png"]; // Add more accessories as needed
-    for (const accessory of accessories) {
-        const cell = newRow.insertCell();
-        const img = document.createElement('img');
-        img.src = accessory;
-        img.alt = accessory;
-        img.className = 'accessory-image';
-        img.draggable = true;
-        img.ondragstart = drag;
-
-        // Set crossOrigin attribute
-        img.crossOrigin = "Anonymous";
-
-        cell.appendChild(img);
-
-        const removeButton = document.createElement('button');
-        removeButton.innerText = '-';
-        removeButton.onclick = function () {
-            removeAccessory(img);
-        };
-        cell.appendChild(removeButton);
     }
 }
